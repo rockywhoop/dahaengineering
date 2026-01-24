@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Daha Engineering Consultancy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="tailwind-modern.css">
+</head>
+<body>
+</div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+        <!-- Navigation Bar -->
+    <nav class="bg-gray-100 text-primary sticky top-0 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 text-2xl font-bold hover:text-secondary transition-colors">
+                    <img src="assets/logo/logo.png" alt="Daha Engineering logo" class="logo-img">
+                </a>
+
+                <!-- Hamburger Menu -->
+                <button class="hamburger" id="hamburger">
+                    <span class="w-6 h-0.5 bg-primary transition-all"></span>
+                    <span class="w-6 h-0.5 bg-primary transition-all"></span>
+                    <span class="w-6 h-0.5 bg-primary transition-all"></span>
+                </button>
+
+                <!-- Nav Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="services.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium flex items-center gap-2">
+                            Services
+                            <i class="fas fa-chevron-down text-xs group-hover:rotate-180 transition-transform"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="services/transmission-lines.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Transmission Line Engineering</a>
+                            <a href="services/highways-railways.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Highways & Railways</a>
+                            <a href="services/renewable-energy.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Renewable Energy & Solar</a>
+                            <a href="services/geotechnical.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Geotechnical Surveys</a>
+                            <a href="services/gpr-surveys.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">GPR Surveys</a>
+                            <a href="services/infrastructure-monitoring.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Infrastructure Monitoring</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Let's discuss your project requirements and find the perfect engineering solution</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="transmission">Transmission Line Engineering</option>
+                                <option value="highways">Highways & Railways</option>
+                                <option value="renewable">Renewable Energy</option>
+                                <option value="geotechnical">Geotechnical Surveys</option>
+                                <option value="gpr">GPR Surveys</option>
+                                <option value="infrastructure">Infrastructure Monitoring</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <p class="form-note">* Required fields. We'll get back to you within 24 hours.</p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-location-dot"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Registered Office</h4>
+                            <p>Siswan Dhala<br>Kirani Compound<br>Laxmaipur, Siwan 841226<br>Bihar, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-location-dot"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Branch Office</h4>
+                            <p>House No. 151, Gali No. 11<br>Raj Nagar 2, Palam<br>Delhi - 110077<br>India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone Numbers</h4>
+                            <p><a href="tel:+919311469315">+91 9311469315</a><br><a href="tel:+919817231902">+91 9817231902</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:dahaengineering@gmail.com">dahaengineering@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Social Media</h4>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/daha-engineering-consultancy-a11944365/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours Section -->
+    <section class="office-hours">
+        <div class="container">
+            <h2>Office Hours</h2>
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <h4>Monday - Friday</h4>
+                    <p>9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="hours-card">
+                    <h4>Saturday</h4>
+                    <p>10:00 AM - 2:00 PM</p>
+                </div>
+                <div class="hours-card">
+                    <h4>Sunday</h4>
+                    <p>Closed</p>
+                </div>
+                <div class="hours-card">
+                    <h4>Holidays</h4>
+                    <p>By appointment only</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Explore our comprehensive range of engineering and surveying services designed to meet your specific project needs.</p>
+                <div class="cta-buttons">
+                    <a href="services.html" class="btn btn-primary">View All Services</a>
+                    <a href="about.html" class="btn btn-secondary">Learn About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-glass">    <div class="footer-blobs" aria-hidden="true">
+        <span class="glass-blob blob-1"></span>
+        <span class="glass-blob blob-2"></span>
+        <span class="glass-blob blob-3"></span>
+    </div>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: About -->
+                <div class="footer-column">
+                    <h4>About Daha Engineering</h4>
+                    <p>Leading provider of comprehensive engineering and project management consultancy services. We deliver end-to-end solutions with world-class quality assurance.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/daha-engineering-consultancy-a11944365/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Service Categories -->
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services/transmission-lines.html">Transmission Lines</a></li>
+                        <li><a href="services/highways-railways.html">Highways & Railways</a></li>
+                        <li><a href="services/renewable-energy.html">Renewable Energy</a></li>
+                        <li><a href="services/geotechnical.html">Geotechnical</a></li>
+                        <li><a href="services/gpr-surveys.html">GPR Surveys</a></li>
+                        <li><a href="services/infrastructure-monitoring.html">Infrastructure Monitoring</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Offices -->
+                <div class="footer-column">
+                    <h4>Contact & Offices</h4>
+                    <div class="office-info">
+                        <strong>Registered Office</strong>
+                        <p>Siswan Dhala<br>Kirani Compound<br>Laxmaipur, Siwan 841226<br>Bihar, India</p>
+                    </div>
+                    <div class="office-info">
+                        <strong>Branch Office</strong>
+                        <p>House No. 151, Gali No. 11<br>Raj Nagar 2, Palam<br>Delhi - 110077<br>India</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daha Engineering Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form handling
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // You can add form submission logic here
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

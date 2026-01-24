@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground Penetrating Radar (GPR) Surveys | Daha Engineering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../tailwind-modern.css">
+</head>
+<body>
+<!-- Navigation -->
+        <!-- Navigation Bar -->
+    <nav class="bg-gray-100 text-primary sticky top-0 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center gap-2 text-2xl font-bold hover:text-secondary transition-colors">
+                    <img src="../assets/logo/logo.png" alt="Daha Engineering logo" class="logo-img">
+                </a>
+
+                <!-- Hamburger Menu -->
+                <button class="hamburger" id="hamburger">
+                    <span class="w-6 h-0.5 bg-primary transition-all"></span>
+                    <span class="w-6 h-0.5 bg-primary transition-all"></span>
+                    <span class="w-6 h-0.5 bg-primary transition-all"></span>
+                </button>
+
+                <!-- Nav Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="../services.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium flex items-center gap-2">
+                            Services
+                            <i class="fas fa-chevron-down text-xs group-hover:rotate-180 transition-transform"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="transmission-lines.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Transmission Line Engineering</a>
+                            <a href="highways-railways.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Highways & Railways</a>
+                            <a href="renewable-energy.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Renewable Energy & Solar</a>
+                            <a href="geotechnical.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Geotechnical Surveys</a>
+                            <a href="gpr-surveys.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">GPR Surveys</a>
+                            <a href="infrastructure-monitoring.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Infrastructure Monitoring</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Ground Penetrating Radar (GPR) Surveys</h1>
+            <p>Non-destructive subsurface investigation using advanced radar technology</p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="service-overview">
+        <div class="container">
+            <h2>Service Overview</h2>
+            <p>Daha Engineering provides state-of-the-art Ground Penetrating Radar (GPR) surveys for non-destructive subsurface investigation. GPR technology uses electromagnetic waves to detect and map buried utilities, voids, and structural anomalies without excavation, making it ideal for infrastructure assessment, utility location, and pavement analysis.</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container details-grid">
+            <div class="details-content">
+                <h2>Comprehensive GPR Survey Services</h2>
+                
+                <div class="service-list">
+                    <div class="list-item">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Subsurface Utility Mapping</h3>
+                        <p>Precise detection and mapping of buried utilities including power lines, water mains, gas pipes, and telecommunications cables without excavation.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fas fa-cube"></i>
+                        <h3>Void & Cavity Detection</h3>
+                        <p>Identification of underground voids, cavities, and subsurface anomalies indicating potential structural hazards or unstable ground conditions.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fas fa-road"></i>
+                        <h3>Pavement Layer Analysis</h3>
+                        <p>Non-destructive evaluation of road pavement structure showing layer thickness, base condition, and identifying delamination or deterioration.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fa-solid fa-mountain"></i>
+                        <h3>Concrete Structure Assessment</h3>
+                        <p>Evaluation of concrete thickness, rebar location, voids, and structural integrity without damaging existing structures or surfaces.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fas fa-water"></i>
+                        <h3>Groundwater Table Detection</h3>
+                        <p>Identification of groundwater levels and subsurface water saturation patterns critical for construction and foundation design planning.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Soil Stratum Profiling</h3>
+                        <p>Characterization of subsurface soil layers, bedrock identification, and geological stratum boundaries for geotechnical assessment.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fa-solid fa-feather"></i>
+                        <h3>Buried Pipe Localization</h3>
+                        <p>Detection and depth determination of underground pipes including sewage, irrigation, and drainage systems for maintenance and repair planning.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fas fa-warning"></i>
+                        <h3>Mine & Collapse Detection</h3>
+                        <p>Identification of underground mines, sinkholes, and collapse zones indicating ground instability and subsidence risk.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fas fa-archway"></i>
+                        <h3>Archaeological Surveys</h3>
+                        <p>Non-invasive detection of buried archaeological features, artifacts, and structures for heritage site investigations.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fas fa-microscope"></i>
+                        <h3>Material Characterization</h3>
+                        <p>Analysis of subsurface materials, soil properties, and material composition based on dielectric characteristics detected by GPR.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fas fa-scroll"></i>
+                        <h3>GPR Data Processing & Interpretation</h3>
+                        <p>Advanced processing, filtering, and interpretation of GPR data with detailed reports and color-coded depth profiles.</p>
+                    </div>
+                    
+                    <div class="list-item">
+                        <i class="fas fa-map"></i>
+                        <h3>GIS-Based Utility Mapping</h3>
+                        <p>Integration of GPR results with GIS systems for comprehensive utility mapping and spatial database creation.</p>
+                    </div>
+                </div>
+
+                <!-- Technology Section -->
+                <div class="tech-equipment">
+                    <h3>Technology & Equipment</h3>
+                    <ul>
+                        <li><strong>GPR Systems:</strong> Multi-frequency GPR equipment (400 MHz to 2 GHz) for varying penetration depths</li>
+                        <li><strong>Cart-based Systems:</strong> Automated GPR systems for large area surveys with GPS integration</li>
+                        <li><strong>Hand-held Units:</strong> Portable GPR for precision location work in restricted areas</li>
+                        <li><strong>Data Processing Software:</strong> Professional GPR interpretation and analysis software</li>
+                        <li><strong>GPS Integration:</strong> Real-time GPS positioning for accurate utility mapping</li>
+                        <li><strong>GIS Export:</strong> Direct export to GIS formats for utility database integration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card quick-facts">
+                    <h3>Quick Facts</h3>
+                    <ul>
+                        <li><strong>Surveys Completed:</strong> 1000+ projects</li>
+                        <li><strong>Area Scanned:</strong> 50,000+ linear km</li>
+                        <li><strong>Max Depth:</strong> 20+ meters</li>
+                        <li><strong>Resolution:</strong> ±10cm accuracy</li>
+                        <li><strong>Experience:</strong> 15+ years GPR</li>
+                        <li><strong>Technology:</strong> Multi-frequency systems</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card cta-card">
+                    <h2>Get Your Subsurface Mapped</h2>
+                    <p>Non-destructive GPR surveys</p>
+                    <a href="../contact.html" class="cta-button">Book Survey</a>
+                </div>
+
+                <div class="sidebar-card related-services">
+                    <h3>Related Services</h3>
+                    <ul>
+                        <li><a href="./geotechnical.html">Geotechnical Investigation</a></li>
+                        <li><a href="./highways-railways.html">Highways & Railways</a></li>
+                        <li><a href="./infrastructure-monitoring.html">Infrastructure Monitoring</a></li>
+                        <li><a href="./transmission-lines.html">Transmission Lines</a></li>
+                        <li><a href="./renewable-energy.html">Renewable Energy</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2>Why Choose Our GPR Services?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Non-Destructive Method</h3>
+                    <p>Survey underground conditions without excavation, damage, or disruption to existing infrastructure</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast & Efficient</h3>
+                    <p>Rapid data collection and processing delivering quick insights for time-sensitive projects</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-crosshairs"></i>
+                    <h3>High Precision</h3>
+                    <p>Advanced technology providing accurate subsurface mapping with ±10cm positioning accuracy</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Detailed Analysis</h3>
+                    <p>Expert interpretation of GPR data delivering actionable insights and comprehensive reports</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-coins"></i>
+                    <h3>Cost-Effective</h3>
+                    <p>Reduce excavation costs and project risks with comprehensive non-destructive assessment</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Safety First</h3>
+                    <p>Utility identification prevents dangerous utility strikes and ensures safe construction practices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>See Below the Surface</h2>
+                <p>Advanced GPR technology for safe and efficient subsurface investigation</p>
+                <div class="cta-buttons">
+                    <a href="../contact.html" class="btn btn-primary">Schedule GPR Survey</a>
+                    <a href="../services.html" class="btn btn-secondary">Explore More Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer class="footer footer-glass">
+        <div class="footer-blobs" aria-hidden="true">
+            <span class="glass-blob blob-1"></span>
+            <span class="glass-blob blob-2"></span>
+            <span class="glass-blob blob-3"></span>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: About -->
+                <div class="footer-column">
+                    <h4>About Daha Engineering</h4>
+                    <p>Leading provider of comprehensive engineering and project management consultancy services. We deliver end-to-end solutions with world-class quality assurance.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/daha-engineering-consultancy-a11944365/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Service Categories -->
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="transmission-lines.html">Transmission Lines</a></li>
+                        <li><a href="highways-railways.html">Highways & Railways</a></li>
+                        <li><a href="renewable-energy.html">Renewable Energy</a></li>
+                        <li><a href="geotechnical.html">Geotechnical</a></li>
+                        <li><a href="gpr-surveys.html">GPR Surveys</a></li>
+                        <li><a href="infrastructure-monitoring.html">Infrastructure Monitoring</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Offices -->
+                <div class="footer-column">
+                    <h4>Contact & Offices</h4>
+                    <div class="office-info">
+                        <strong>Registered Office</strong>
+                        <p>Siswan Dhala<br>Kirani Compound<br>Laxmaipur, Siwan 841226<br>Bihar, India</p>
+                    </div>
+                    <div class="office-info">
+                        <strong>Branch Office</strong>
+                        <p>House No. 151, Gali No. 11<br>Raj Nagar 2, Palam<br>Delhi - 110077<br>India</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daha Engineering Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

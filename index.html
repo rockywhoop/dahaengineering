@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doha Engineering | Surveying, Drone & Infrastructure Services in India</title>
+    <meta name="description" content="Doha Engineering provides surveying, drone mapping, geotechnical, GPR, and infrastructure monitoring services across India. Precision engineering and project management for critical infrastructure.">
+    <meta name="keywords" content="surveying, drone, drone mapping, geotechnical surveys, GPR surveys, transmission line engineering, highways and railways surveys, renewable energy surveys, infrastructure monitoring, LiDAR mapping, DGPS surveys, India">
+    <meta name="robots" content="index,follow">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="tailwind-modern.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0b2f6a',
+                        secondary: '#3ba4ff',
+                        accent: '#6ed0ff',
+                        lightbg: '#eef6ff',
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Top Info Bar -->
+    
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-100 text-primary sticky top-0 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 text-2xl font-bold hover:text-secondary transition-colors">
+                    <img src="assets/logo/logo.png" alt="Daha Engineering logo" class="logo-img">
+                    </a>
+
+                <!-- Hamburger Menu -->
+                <button class="hamburger" id="hamburger">
+                    <span class="w-6 h-0.5 bg-primary transition-all"></span>
+                    <span class="w-6 h-0.5 bg-primary transition-all"></span>
+                    <span class="w-6 h-0.5 bg-primary transition-all"></span>
+                </button>
+
+                <!-- Nav Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="services.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium flex items-center gap-2">
+                            Services 
+                            <i class="fas fa-chevron-down text-xs group-hover:rotate-180 transition-transform"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="services/transmission-lines.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Transmission Line Engineering</a>
+                            <a href="services/highways-railways.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Highways & Railways</a>
+                            <a href="services/renewable-energy.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Renewable Energy & Solar</a>
+                            <a href="services/geotechnical.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Geotechnical Surveys</a>
+                            <a href="services/gpr-surveys.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">GPR Surveys</a>
+                            <a href="services/infrastructure-monitoring.html" class="px-5 py-3 hover:bg-secondary hover:bg-opacity-10 border-l-4 border-transparent hover:border-secondary transition-all">Infrastructure Monitoring</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link block px-5 py-4 hover:text-secondary transition-colors font-medium">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 md:h-screen flex items-center justify-center overflow-hidden" id="hero">
+        <video autoplay muted loop playsinline class="hero-video absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto transform -translate-x-1/2 -translate-y-1/2 object-cover -z-10">
+            <source src="assets/videos/intro_video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-60 -z-10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center text-white z-10 animate__animated animate__fadeInUp">
+            <div class="inline-block bg-secondary bg-opacity-20 border border-secondary text-secondary px-4 py-2 rounded-full mb-6 text-sm font-semibold" data-aos="fade-up">
+                Engineering & Surveying Excellence
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
+                Professional Engineering & Project Management Consultancy
+            </h1>
+            <p class="text-lg md:text-xl mb-10 text-gray-200 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Comprehensive solutions for transmission lines, roads, railways, and large-scale infrastructure projects. Delivering precision, quality, and expertise since establishment.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="services.html" class="bg-secondary hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-bold transition-all hover:shadow-lg hover:scale-105 inline-flex items-center gap-2 justify-center">
+                    Explore Services <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-8 py-4 rounded-lg font-bold transition-all border-2 border-white inline-flex items-center gap-2 justify-center">
+                    Get in Touch <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="bg-gradient-to-r from-primary to-black py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center text-white animate__animated animate__fadeInUp" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="mb-3">
+                        <i class="fas fa-chart-line text-4xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-secondary">500+</h3>
+                    <p class="text-gray-300">Projects Delivered</p>
+                </div>
+                <div class="text-center text-white animate__animated animate__fadeInUp" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="mb-3">
+                        <i class="fas fa-map-location-dot text-4xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-secondary">1000+</h3>
+                    <p class="text-gray-300">Survey Points Mapped</p>
+                </div>
+                <div class="text-center text-white animate__animated animate__fadeInUp" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="mb-3">
+                        <i class="fas fa-handshake text-4xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-secondary">100+</h3>
+                    <p class="text-gray-300">Satisfied Clients</p>
+                </div>
+                <div class="text-center text-white animate__animated animate__fadeInUp" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="mb-3">
+                        <i class="fas fa-award text-4xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-secondary">20+</h3>
+                    <p class="text-gray-300">Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 md:py-24 bg-white" id="about">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-primary">About Daha Engineering Consultancy</h2>
+                    <h3 class="text-2xl font-bold text-secondary mb-6">Our Story & Mission</h3>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        Daha Engineering Consultancy is a professional implementation services and support provider offering comprehensive engineering and project management consultancy solutions. Founded on the principle of cultivating meaningful relationships and creating value across all associations, we have established ourselves as a trusted partner in infrastructure development.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        We deliver end-to-end services across multiple sectors including engineering construction, energy, roads, railways, urban and rural development, telecommunications, utilities, and large-scale infrastructure projects.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-secondary mb-6">Our Commitment</h3>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        Daha Engineering Consultancy is dedicated to providing services and solutions that ensure customer satisfaction while optimizing their return on investment. Our operational planning follows a structured, step-by-step execution process within the framework of an Accredited Quality Management System, with a clear focus on achieving total customer satisfaction.
+                    </p>
+                    
+                    <p class="text-lg font-semibold text-primary mb-8">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        We regard our customers, employees, partners, and investors as integral elements of our organizational fabric.
+                    </p>
+                    
+                    <a href="about.html" class="inline-block bg-secondary hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-bold transition-all hover:shadow-lg hover:scale-105">
+                        Learn More About Us <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Highlights -->
+                <div class="grid grid-cols-1 gap-6" data-aos="fade-left">
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border-l-4 border-secondary hover:shadow-lg transition-all" data-aos="fade-up">
+                        <div class="text-4xl text-secondary mb-4"><i class="fas fa-handshake"></i></div>
+                        <h4 class="text-xl font-bold text-primary mb-2">Strategic Partnerships</h4>
+                        <p class="text-gray-700">World-renowned organizations adhering to sustained value delivery</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl border-l-4 border-secondary hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-4xl text-secondary mb-4"><i class="fas fa-chart-line"></i></div>
+                        <h4 class="text-xl font-bold text-primary mb-2">Multi-Sector Expertise</h4>
+                        <p class="text-gray-700">Experience across energy, construction, transportation, and utilities</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border-l-4 border-secondary hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-4xl text-secondary mb-4"><i class="fas fa-star"></i></div>
+                        <h4 class="text-xl font-bold text-primary mb-2">Quality Excellence</h4>
+                        <p class="text-gray-700">Accredited Quality Management System with total customer focus</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl border-l-4 border-secondary hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-4xl text-secondary mb-4"><i class="fas fa-users"></i></div>
+                        <h4 class="text-xl font-bold text-primary mb-2">Team Collaboration</h4>
+                        <p class="text-gray-700">Culture of teamwork, collaboration, and mutual growth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 md:py-24 bg-lightbg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-primary">Why Choose Daha Engineering</h2>
+                <p class="text-xl text-gray-600">Key reasons our clients trust us with their most critical projects</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-3xl mb-6 mx-auto">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3 text-center">Quality Assurance</h3>
+                    <p class="text-gray-700 text-center">Stringent quality control measures at every stage, ensuring superior results and client satisfaction.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-3xl mb-6 mx-auto">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3 text-center">Safety Standards</h3>
+                    <p class="text-gray-700 text-center">Strict adherence to safety regulations with regular training for all team members on-site.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-3xl mb-6 mx-auto">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3 text-center">Advanced Technology</h3>
+                    <p class="text-gray-700 text-center">State-of-the-art equipment including LiDAR, DGPS, drones, and GPR for precise surveying.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-3xl mb-6 mx-auto">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3 text-center">Expert Team</h3>
+                    <p class="text-gray-700 text-center">Experienced engineers and surveyors with proven track record in complex infrastructure projects.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-3xl mb-6 mx-auto">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3 text-center">Timely Delivery</h3>
+                    <p class="text-gray-700 text-center">Structured execution process ensuring projects are completed on schedule and within budget.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-3xl mb-6 mx-auto">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3 text-center">Client Focus</h3>
+                    <p class="text-gray-700 text-center">Dedicated single-window approach for seamless execution of multi-disciplinary projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 md:py-24 bg-white" id="services">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-primary">Our Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive engineering and surveying solutions across multiple sectors</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all group" data-aos="fade-up">
+                    <div class="w-20 h-20 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-4xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-tower-broadcast"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Transmission Line Engineering</h3>
+                    <p class="text-gray-700 mb-6">Route alignment surveys, tower spotting, DTL surveys, LiDAR mapping, and GIS asset documentation for transmission corridors and power infrastructure.</p>
+                    <a href="services/transmission-lines.html" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all group/link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-4xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Highways & Railways</h3>
+                    <p class="text-gray-700 mb-6">Route surveys, topographic surveys, DGPS surveys, and LiDAR technology for highway, expressway, and railway infrastructure projects.</p>
+                    <a href="services/highways-railways.html" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all group/link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white text-4xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Geotechnical & GPR Surveys</h3>
+                    <p class="text-gray-700 mb-6">Exploratory drilling, soil sampling, in-situ testing, ground penetrating radar for subsurface investigation and utility detection.</p>
+                    <a href="services/geotechnical.html" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all group/link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="services.html" class="inline-block bg-secondary hover:bg-opacity-90 text-white px-10 py-4 rounded-lg font-bold transition-all hover:shadow-lg hover:scale-105">
+                    View All Services <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-lightbg" id="testimonials">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-primary">Trusted by 100+ Clients</h2>
+                <p class="text-xl text-gray-600">What our partners and clients have to say about us</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all" data-aos="fade-up">
+                    <div class="flex gap-1 mb-4 text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed italic">
+                        "Daha Engineering Consultancy exceeded our expectations. Their attention to detail and commitment to quality was evident from start to finish. The team demonstrated exceptional professionalism throughout our transmission line project."
+                    </p>
+                    <div class="border-t pt-4">
+                        <strong class="text-primary block">Project Director</strong>
+                        <span class="text-gray-500 text-sm">Power Transmission Infrastructure</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex gap-1 mb-4 text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed italic">
+                        "Working with Daha Engineering for our highway project was a game-changer. Their comprehensive surveying using LiDAR and DGPS provided accurate data that was crucial for our design phase. Highly professional and reliable."
+                    </p>
+                    <div class="border-t pt-4">
+                        <strong class="text-primary block">Engineering Manager</strong>
+                        <span class="text-gray-500 text-sm">Highway Development Project</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex gap-1 mb-4 text-secondary">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed italic">
+                        "The geotechnical investigation services provided were comprehensive and detailed. Their team completed the work ahead of schedule without compromising on quality. Excellent communication throughout the project duration."
+                    </p>
+                    <div class="border-t pt-4">
+                        <strong class="text-primary block">Chief Engineer</strong>
+                        <span class="text-gray-500 text-sm">Infrastructure Development Client</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-primary via-primary to-black text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Transform Your Engineering Projects</h2>
+                    <p class="text-lg text-gray-200 mb-8 leading-relaxed">
+                        With accurate data, advanced technology, and expert analysis, we help you make better decisions and achieve superior project outcomes.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <a href="contact.html" class="bg-secondary hover:bg-opacity-90 text-white px-8 py-4 rounded-lg font-bold transition-all hover:shadow-lg hover:scale-105 inline-flex items-center gap-2 justify-center">
+                            Schedule a Consultation <i class="fas fa-calendar"></i>
+                        </a>
+                        <a href="services.html" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-8 py-4 rounded-lg font-bold transition-all border-2 border-white inline-flex items-center gap-2 justify-center">
+                            View Services <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center" data-aos="fade-left"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-glass">
+        <div class="footer-blobs" aria-hidden="true">
+            <span class="glass-blob blob-1"></span>
+            <span class="glass-blob blob-2"></span>
+            <span class="glass-blob blob-3"></span>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: About -->
+                <div class="footer-column">
+                    <h4>About Daha Engineering</h4>
+                    <p>Leading provider of comprehensive engineering and project management consultancy services. We deliver end-to-end solutions with world-class quality assurance.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/daha-engineering-consultancy-a11944365/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Service Categories -->
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services/transmission-lines.html">Transmission Lines</a></li>
+                        <li><a href="services/highways-railways.html">Highways & Railways</a></li>
+                        <li><a href="services/renewable-energy.html">Renewable Energy</a></li>
+                        <li><a href="services/geotechnical.html">Geotechnical</a></li>
+                        <li><a href="services/gpr-surveys.html">GPR Surveys</a></li>
+                        <li><a href="services/infrastructure-monitoring.html">Infrastructure Monitoring</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Offices -->
+                <div class="footer-column">
+                    <h4>Contact & Offices</h4>
+                    <div class="office-info">
+                        <strong>Registered Office</strong>
+                        <p>Siswan Dhala<br>Kirani Compound<br>Laxmaipur, Siwan 841226<br>Bihar, India</p>
+                    </div>
+                    <div class="office-info">
+                        <strong>Branch Office</strong>
+                        <p>House No. 151, Gali No. 11<br>Raj Nagar 2, Palam<br>Delhi - 110077<br>India</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daha Engineering Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="fixed bottom-6 right-6 w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center opacity-0 invisible hover:scale-110 transition-all shadow-lg" id="backToTop" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
