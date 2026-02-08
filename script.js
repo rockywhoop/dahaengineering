@@ -51,6 +51,26 @@ if (hamburger && navMenu) {
 }
 
 // ============================================
+// SERVICES STRIP SCROLL
+// ============================================
+
+const servicesTrack = document.getElementById('servicesTrack');
+const servicesButtons = document.querySelectorAll('.services-scroll-btn');
+
+if (servicesTrack && servicesButtons.length) {
+    servicesButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const direction = btn.getAttribute('data-scroll');
+            const scrollAmount = servicesTrack.clientWidth * 0.8;
+            servicesTrack.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+    });
+}
+
+// ============================================
 // BACK TO TOP BUTTON
 // ============================================
 
